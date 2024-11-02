@@ -1,0 +1,437 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.header {
+    background-color: #161B33;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 70px;
+    margin-right: 25px;
+}
+
+.header .logo h1 {
+    font-size: 29px;
+    margin: 0;
+}
+
+.header nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.header .register {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 20px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #333;
+}
+
+/* Registration Form Styling */
+#registerForm label {
+    display: block;
+    text-align: left;
+    margin: 25px 0 10px;
+}
+
+#registerForm input[type="text"],
+#registerForm input[type="email"],
+#registerForm input[type="password"],
+#registerForm input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#registerForm input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#registerForm button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#registerForm button:hover {
+    background-color: #218838;
+}
+/* Main Section Styling */
+.main {
+    padding: 0px;
+    max-width: 2000px;
+    margin: auto;
+    text-align: center;
+}
+
+/* QR Generator Styling */
+.qr-generator {
+    background-color: #C7E6F5;
+    padding: 70px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+.qr-generator input {
+    padding: 15px;
+    width: 70%;
+    margin: 90px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+}
+
+.qr-generator button {
+    padding: 10px 21px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* QR Customizer Section */
+.qr-customizer {
+    background-color:#E1EFF6;
+    padding: 80px;
+    border-radius: 20px;
+    margin-bottom: 90px;
+}
+
+.color-options {
+    
+    justify-content: space-between; /* Distribute space between items */
+    margin-top: 25px; /* Space above the color options */
+}
+
+.eye-shape-options {
+   
+    margin-top: 25px; /* Space above the color options */
+}
+
+.color-options label,
+.eye-shape-options label {
+    margin: 50 50px; /* Reduced margin for less space */
+    color: #0a0a0a;
+}
+
+.qr-preview {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#qr-code-canvas {
+    margin-top: 30px;
+    border: 0px solid #333;
+    padding: 10px;
+    display: inline-block; /* Ensures centering */
+    margin-bottom: 30px; /* Adds space below the QR code */
+}
+
+.download-button {
+    margin-top: 20px; /* Space above the download button */
+    padding: 20px 25px;
+    border: none;
+    background-color: #111D4A;
+    color:#0f236b;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block; /* Ensure it takes full width for centering */
+    margin-left: auto;
+    margin-right: auto; /* Center the button */
+}
+
+/* Description Text Styling */
+.description-text {
+    padding: 70px;
+    text-align: center;
+    background-color: #778da9; /* Updated background color */
+    color: #ffffff; /* Updated text color */
+    padding: 100px; /* Increased padding for larger section */
+}
+
+.description-text h2 {
+    font-size: 1.8em;
+}
+
+.description-text p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+
+/* Future-proof Technology Section */
+.future-proof-technology {
+    padding: 40px;
+    background-color: #f0f7ff;
+    text-align: center;
+}
+
+.future-proof-technology h2 {
+    color: #0094FF;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.future-proof-technology p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.feature-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-card h3 {
+    color: #0094FF;
+    font-size: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.feature-card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#qr-code-maker {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#qr-code-maker h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#qr-code-maker p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+#qr-code-maker .features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#qr-code-maker .feature {
+    text-align: center;
+}
+
+#qr-code-maker .feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#qr-code-maker .feature h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#qr-code-maker img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.qr-code-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #F0F8FF; /* Adjust the background color as needed */
+}
+
+.left-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.left-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.left-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.left-content .button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.qr-code-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.add-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scan-over-time {
+    text-align: center;
+}
+
+.scan-over-time h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.scan-over-time img {
+    width: 250px;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+button:active {
+    background-color: #28a745; /* Color change on click */
+    transform: scale(0.95); /* Slight shrink effect */
+    transition: background-color 0.3s, transform 0.1s;
+  }
+ 
+  button:hover {
+    background-color: #34ce57; /* Changes color to green */
+    transition: background-color 0.3s;
+  }
+  .header nav a:hover {
+    text-decoration: underline;
+    color: #2bdbdb; /* Hover color */
+    transition: color 0.3s;
+  }
+ .description-text {
+    animation: slideout 1s ease-in-out;
+  }
+  
+  @keyframes slideout {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+          
+

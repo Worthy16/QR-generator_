@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightQR - QR Code Generator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="https://i.imgur.com/NCAfpCP.png" alt="BrightQR Logo">
+      <h1>BrightQR</h1>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Generate QR</a>
+      <a href="#">Benefits</a>
+      <a href="#">Contact</a>
+    <button id="registerButton">Register</button>
+    </nav>
+  </header>
+
+  <main class="main">
+    
+     <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Register</h2>
+        <form id="registerForm">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+          <label for="agree">
+            <input type="checkbox" id="agree" name="agree" required> I agree to the terms and conditions
+          </label>
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    
+    <section class="qr-generator">
+      <h2>The Most Advanced QR Code Generator</h2>
+      <p>Create customized, brand-aligned QR codes with BrightQR.</p>
+      <input type="text" id="qr-text" placeholder="Enter URL or Text">
+      <button id="generate-button">Generate QR Code</button>
+    </section>
+
+    <section class="qr-customizer">
+      <h3>Customize Your QR Code</h3>
+      <div class="color-options">
+        <label>
+          Foreground Color
+          <input type="color" id="foreground-color" value="#E4E740">
+        </label>
+        <label>
+          Background Color
+          <input type="color" id="background-color" value="#1E0C96">
+        </label>
+      </div>
+
+      <div class="eye-shape-options">
+        <label for="eye-shape">Select QR Eye Shape</label>
+        <select id="eye-shape">
+          </select>
+      </div>
+
+      <div class="qr-preview">
+        <div id="qr-code-canvas"></div>
+        <button id="download-png">Download PNG</button>
+      </div>
+    </section>
+
+   <section class="description-text">
+  <h2>Create a free QR code.</h2>
+  <p>Quick response codes connect the physical and digital worlds—but there's so much more they can do. Bright QR lets you create unlimited Static QR and Dynamic QR with advanced features, reliability, and a host of integrations.Taking you all the way to the future.</p>
+</section>
+
+    <section class="future-proof-technology">
+      <h1>Future-proof technology</h1>
+      <h2>Our QR platform is recognized by ProductHunt and G2 as the most innovative software for our features and comprehensive customization tools.</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <h2>Safe</h2>
+          <p>Most advanced safety tools like 2FA and internal audits</p>
+          <p>Monitored 24/7 by human and artificial intelligence</p>
+        </div>
+        <div class="feature-card">
+          <h2>Fast</h2>
+          <p>Create up to 1,000 new branded links per second</p>
+          <p>Rapid auto-scaling server clusters</p>
+        </div>
+        <div class="feature-card">
+          <h2>Flexible</h2>
+          <p>18K+ developers already using QR codes</p>
+          <p>Easy-to-use APIs for flexible integrations</p>
+        </div>
+        <div class="feature-card">
+          <h2>Reliable</h2>
+          <p>99.9% Guaranteed service uptime</p>
+          <p>Redundant cloud-based server architecture</p>
+        </div>
+      </div>
+    </section>
+
+   <section id="qr-code-maker">
+    <h2>The best free QR code maker</h2>
+    <p>Bright QR's custom QR codes stand out. Our studies reveal that QR codes with logos get up to 40% more scans*.</p>
+    <p>*vs standard black-and-white QR codes</p>
+
+    <div class="features">
+        <div class="feature">
+            <img src="images/fully-customizable.svg" alt="Fully Customizable">
+            <h3>Fully Customizable</h3>
+        </div>
+        <div class="feature">
+            <img src="images/scan-analytics.svg" alt="Scan Analytics">
+            <h3>Scan Analytics</h3>
+        </div>
+        <div class="feature">
+            <img src="C:\Users\HP\Desktop\qr images\img.png" alt="Cost-Effective">
+            <h3>Cost-Effective</h3>
+        </div>
+        <div class="feature">
+            <img src="images/non-expiring.svg" alt="Non-Expiring QR Codes">
+            <h3>Non-Expiring QR Codes</h3>
+        </div>
+    </div>
+
+    <img src="images/qr-code-example.png" alt="QR Code Example">
+
+    <p>Learn from your scans. Our QR code creator's dashboard lets you view scan data - the number of scans, times and locations, and devices used, so you can optimize your campaign on-the-go.</p>
+</section>
+    <section class="qr-code-section">
+    <div class="left-content">
+        <h2>Create eye-catching dynamic QR codes</h2>
+        <p>With a dynamic QR generator, you can track the following scan data: the number of scans, the time and location of each scan, and the devices used.</p>
+        <p>Learn how QR codes are being used across more than 17 industries around the globe.</p>
+        <a href="#" class="button">Sign up to get our FREE eBook!</a>
+        <a href="#" class="button">Create a free account</a>
+    </div>
+
+    <div class="right-content">
+        <div class="qr-code-container">
+            <img src="C:\Users\HP\Desktop\qr images\sec7.png" alt="QR Code">
+            
+        <div class="scan-over-time">
+            <h4>Scans over time</h4>
+            <img src="C:\Users\HP\Desktop\qr images\scan.png" alt="Scan Chart">
+        </div>
+    </div>
+</section>
+     
+    <div class="footer">
+        <p>This QR Code Generator is a registered trademark of Bright QR PTE. LTD.</p>
+        <p>QR Code™ is a trademark of DENSO WAVE INCORPORATED. © 2024 www.bright.com</p>
+    </div>
+</section>
+
+  </main>
+
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <script src="./style.js"></script>
+</body>
+</html>
